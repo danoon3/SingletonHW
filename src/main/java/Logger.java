@@ -3,10 +3,10 @@ import java.util.GregorianCalendar;
 
 public class Logger {
     private static Logger logger;
-    Calendar calendar = new GregorianCalendar();
-    protected int count = 1;
+    private Calendar calendar = new GregorianCalendar();
+    private int count = 1;
 
-    void log(String msg) {
+    public void log(String msg) {
         System.out.println("[" + calendar.getTime() + " " + count++ + "] " + msg);
     }
 
